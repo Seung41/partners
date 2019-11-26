@@ -1,0 +1,11 @@
+<script type="text/javascript" src="/editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+<textarea name="weditor" id="weditor"  rows="10" cols="90"></textarea>
+<script type="text/javascript">
+var oEditors = [];
+nhn.husky.EZCreator.createInIFrame({
+oAppRef: oEditors,
+elPlaceHolder: "weditor",
+sSkinURI: "/editor/SmartEditor2Skin.html",
+fCreator: "createSEditor2"
+});
+</script>
