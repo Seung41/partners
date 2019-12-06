@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- DHTMLX 라이브러리 참조 선언 -->
+<link rel="stylesheet" type="text/css" href="/dhtmlx/dhtmlx.css"/> 
+<script src="/dhtmlx/dhtmlx.js"></script>
+ 
+<script>
+    var grid;
+    function doOnLoad(){
+        // Grid가 표시될 Html Element의 ID(grid)를 지정하여 Grid Object를 생성한다.
+        // DHTMLX 사용 선언
+        grid = new dhtmlXGridObject("grid");
+
+        // Grid의 타이틀
+        grid.setHeader("NO,부서명,팀명,사번,성별,취미,나이,입사연도");
+
+        // Grid의 컬럼 폭
+        grid.setInitWidths("50,150,120,80,80,80,80,100");
+
+        // Grid의 컬럼별 정렬
+        grid.setColAlign("right,left,left,right,center,left,center,center");
+
+        // Grid의 컬럼별 속성(ro : Read Only, ron : Read Only numeric, ed : Editable, txt : Text, ch : Check Box, co : Combo Box)
+        grid.setColTypes("ro,txt,txt,txt,ra,ch,ra,co");
+
+        // Grid의 컬럼별 속성 타입(int : 숫자, str : 문자, date : 날짜)
+        grid.setColSorting("int,str,str,int,str,str,str,date");
+        grid.init();
+ 
+        // XML 데이터를 불러오고, 로딩이 완료되면 alert이 표시된다.
+        grid.load("grid.xml", function(){
+            alert("불러오기 완료");
+        });
+ 
+    }
+</script>
+<title>Grid</title>
+</head>
+<body onload="doOnLoad();">
+ 
+    <div id="grid" style="width:800px; height:500px;"></div>
+ 
+</body>
+</html>
+ 

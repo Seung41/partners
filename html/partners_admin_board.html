@@ -12,7 +12,7 @@
     <body class="main_background">
         <div class="mainpage">
             <div class="bd_page_header">
-                <h2>게시판 현황</h2>
+                <!--<h2>게시판 현황</h2>
                 <div class="row">
                     <div class="mn_content_mn">
                         <div class="card">
@@ -32,67 +32,190 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <h2>게시판 목록</h2>
                 <div class="mn_content_mn">
                     <div class="card">
-                        <div class="card-header">게시글 조회 조건</div>
-                        <div class="card-body">
-
+                        <div class="card-header">
+                            
+                        </div>
+                        <div class="card-body pd-2">
+                            <div class="colgroup-box-40">
+                                <div class="colgroup-content">
+                                    <label>기간</label>
+                                    <input type="text" name="" value="2018.04.21" class="useDatepicker"> ~
+                                    <input type="text" name="" value="2018.04.21" class="useDatepicker">
+                                </div>
+                            </div>
+                            <div class="colgroup-box-50">
+                                <div class="colgroup-content">
+                                    <label class="label1">분류</label>
+                                    <select name="" class="w1800vw">
+                                        <option value="">2018</option>
+                                    </select>
+                                    <input type="text" name="" class="w1400vw" value="">
+                                </div>
+                            </div>
+                                <div class="colgroup-box-5">
+                                        <a href="#drawingSelect" class="btn_inline btn_search btn_modalOpen">조회</a>
+                                </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="mn_content_mn">
                         <div class="card card-body">
-                            <table class="table table-dark" id="bd_list_tbl_select">
-                                <thead>
-                                    <tr>
-                                        <th><input type="checkbox" id="" name="board_check"></th>
-                                        <th>분류</th>
-                                        <th class="bd_tbl_title">제목</th>
-                                        <th>작성자</th>
-                                        <th>작성일</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row"><input type="checkbox" id="" name="board_check"></th>
-                                        <td>실측상담</td>
-                                        <td>test</td>
-                                        <td>이승연</td>
-                                        <td>19.11.29</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><input type="checkbox" id="" name="board_check"></th>
-                                        <td>기타</td>
-                                        <td>testtesttesttesttest</td>
-                                        <td>이승연</td>
-                                        <td>19.11.29</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><input type="checkbox" id="" name="board_check"></th>
-                                        <td>실측상담</td>
-                                        <td>testtesttest</td>
-                                        <td>이승연</td>
-                                        <td>19.11.29</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><input type="checkbox" id="" name="board_check"></th>
-                                        <td>기타</td>
-                                        <td>testtesttesttesttest</td>
-                                        <td>이승연</td>
-                                        <td>19.11.29</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><input type="checkbox" id="" name="board_check"></th>
-                                        <td>기타</td>
-                                        <td>testtest</td>
-                                        <td>이승연</td>
-                                        <td>19.11.29</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="card-thead">
+                                <table class="table table-dark" id="bd_list_tbl_select">
+                                    <thead>
+                                        <tr>
+                                            <th class="aa">
+                                                <input type="checkbox" id="board_check_All" class="board_check">
+                                                <label for="board_check_All"></label>
+                                            </th>
+                                            <th>분류</th>
+                                            <th class="bd_tbl_title">제목</th>
+                                            <th>작성자</th>
+                                            <th>작성일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th></th> 
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card-tbody scrolled">
+                                <table class="table table-dark" id="bd_list_tbl_select">
+                                    <thead>
+                                        <tr>
+                                            <th class="aa">
+                                                체크박스
+                                            </th>
+                                            <th>분류</th>
+                                            <th class="bd_tbl_title">제목</th>
+                                            <th>작성자</th>
+                                            <th>작성일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_1" class="board_check" name="board_chk[1]" value="">
+                                                <label for="board_chk_1"></label>
+                                            </th> 
+                                            <td>실측상담</td>
+                                            <td>test</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_2" class="board_check" name="board_chk[2]" value="">
+                                                <label for="board_chk_2"></label>
+                                            </th>
+                                            <td>기타</td>
+                                            <td>testtesttesttesttest</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_3" class="board_check" name="board_chk[3]" value="1">
+                                                <label for="board_chk_3"></label>
+                                            </th>
+                                            <td>실측상담</td>
+                                            <td>testtesttest</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_4" class="board_check" name="board_chk[3]" value="1">
+                                                <label for="board_chk_4"></label>
+                                            </th>
+                                            <td>기타</td>
+                                            <td>testtesttesttesttest</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_5" class="board_check" name="board_chk[3]" value="1">
+                                                <label for="board_chk_5"></label>
+                                            </th>
+                                            <td>기타</td>
+                                            <td>testtest</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_6" class="board_check" name="board_chk[6]" value="">
+                                                <label for="board_chk_6"></label>
+                                            </th> 
+                                            <td>실측상담</td>
+                                            <td>test</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_7" class="board_check" name="board_chk[7]" value="">
+                                                <label for="board_chk_7"></label>
+                                            </th>
+                                            <td>기타</td>
+                                            <td>testtesttesttesttest</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_8" class="board_check" name="board_chk[8]" value="1">
+                                                <label for="board_chk_8"></label>
+                                            </th>
+                                            <td>실측상담</td>
+                                            <td>testtesttest</td>
+                                            <td>이승연</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_9" class="board_check" name="board_chk[9]" value="1">
+                                                <label for="board_chk_9"></label>
+                                            </th>
+                                            <td>기타</td>
+                                            <td>testtestteasdttesttest</td>
+                                            <td>이승연asd</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" id="board_chk_10" class="board_check" name="board_chk[10]" value="1">
+                                                <label for="board_chk_10"></label>
+                                            </th>
+                                            <td>기타</td>
+                                            <td>testtest</td>
+                                            <td>이승연fds</td>
+                                            <td>19.11.29</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--<ul class="pagination">
+    
+                            </ul>-->
+                            <div class="btnArea">
+                                <a href="#" class="w100 btn_inline btn_gray">조회</a>
+                                <a href="#" class="w100 btn_inline btn_gray">조회</a>
+                                <a href="#" class="w100 btn_inline btn_red">조회</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>

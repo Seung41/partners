@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>한샘리하우스 패키지</title>
+<link rel="stylesheet" type="text/css" href="./css/base.css" />
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#periodCheck").click(function(){
+		if($(this).is(":checked")){
+			$("#periodArea").addClass("active");
+		}else{
+			$("#periodArea").removeClass("active");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="wrap" class="userWrap">
+	<div id="header">
+		<div class="inner">
+			<h1><img src="./images/logo.png" alt="한샘리하우스패키지"></h1>
+		</div>
+	</div>
+	<div id="container">
+		<div class="inner">
+			<div class="formBox">
+				<h4>고객정보조회</h4>
+				<div>
+					<ul class="colgroup">
+						<li class="leftLabel w45p" id="periodArea">
+							<label>
+								<input type="checkbox" name="" value="" id="periodCheck">기간설정
+							</label>
+							<input type="text" name="" value="2018.04.21" class="useDatepicker"> ~
+							<input type="text" name="" value="2018.04.21" class="useDatepicker">
+						</li>
+						<li class="w5p"></li>
+						<li class="leftLabel w20p">
+							<label>고객명</label>
+							<input type="text" name="" class="w100p" value="박성진">
+						</li>
+						<li class="w5p"></li>
+						<li class="leftLabel w25p">
+							<label>연락처</label>
+							<input type="text" name="" class="w100p" value="">
+						</li>
+					</ul>
+				</div>
+				<div class="btnArea">
+					<a href="#" class="w350 btn_inline btn_gray">조회</a>
+				</div>
+				<br />
+
+				<h4>고객조회목록</h4>
+				<div class="tableWrap list">
+					<div class="tableHead">
+						<table>
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col class="w70">
+							<col class="w150">
+							<col class="w180">
+							<col class="w180">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col">이름</th>
+								<th scope="col">연락처</th>
+								<th scope="col">상담일</th>
+								<th scope="col">주소</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+					<div class="tableBody scrolled">
+						<table>
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col class="w70">
+							<col class="w150">
+							<col class="w180">
+							<col class="w180">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col">이름</th>
+								<th scope="col">연락처</th>
+								<th scope="col">상담일</th>
+								<th scope="col">주소</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" value=""></td>
+								<td>박성진</td>
+								<td>010-1234-5678</td>
+								<td>2018.05.20</td>
+								<td>경기도 고양시 덕양구 능곡로 30 12 현대홈타운 1차 104동 1806호</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="btnArea">
+					<a href="./drawing_select.html" class="w350 btn_inline btn_focus">상담</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div id="footer">
+		<div class="inner">
+			<p>Copyright (c) 2018 HANSSEM Co., Ltd. All rights reserved.</p>
+		</div>
+	</div>-->
+</div>
+<div id="overlay"></div>
+<div id="loading"><div><div></div><span>로딩중입니다. 잠시만 기다려주세요.</span></div></div>
+</body>
+</html>

@@ -37,7 +37,13 @@
         sSkinURI: "/editor/SmartEditor2Skin.html",
         fCreator: "createSEditor2"
         });
-        </script>
+
+        function pasteHTML(filepath){
+        var sHTML = '<img src="/editor/js/service/se2/upload/'+filepath+'">';
+        editor_object.getById["weditor"].exec("PASTE_HTML", [sHTML]);
+    }
+
+    </script>
 </html>
 
 
