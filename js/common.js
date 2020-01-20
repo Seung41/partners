@@ -37,7 +37,7 @@ $(document).ready(function () {
     //$(document).ready(function(){
     //   $("#div1").load("가져올페이지");
     //});
-    //pagination();
+    pagination();
   
   //jQuery('.pagination li:first-child').addClass("disabled");
 

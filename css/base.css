@@ -6,31 +6,31 @@
 	font-family:'Nanum Gothic';
 	font-style:normal;
 	font-weight:400;
-	src:url(./font/NanumGothic-Regular.eot);
-	src:url(./font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
-	   url(./font/NanumGothic-Regular.woff2) format('woff2'),
-	   url(./font/NanumGothic-Regular.woff) format('woff'),
-	   url(./font/NanumGothic-Regular.ttf) format('truetype');
+	src:url(/css/font/NanumGothic-Regular.eot);
+	src:url(/css/font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+	   url(/css/font/NanumGothic-Regular.woff2) format('woff2'),
+	   url(/css/font/NanumGothic-Regular.woff) format('woff'),
+	   url(/css/font/NanumGothic-Regular.ttf) format('truetype');
 }
 @font-face{
 	font-family:'Nanum Gothic';
 	font-style:normal;
 	font-weight:700;
-	src:url(./font/NanumGothic-Bold.eot);
-	src:url(./font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
-	   url(./font/NanumGothic-Bold.woff2) format('woff2'),
-	   url(./font/NanumGothic-Bold.woff) format('woff'),
-	   url(./font/NanumGothic-Bold.ttf) format('truetype');
+	src:url(/css/font/NanumGothic-Bold.eot);
+	src:url(/css/font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+	   url(/css/font/NanumGothic-Bold.woff2) format('woff2'),
+	   url(/css/font/NanumGothic-Bold.woff) format('woff'),
+	   url(/css/font/NanumGothic-Bold.ttf) format('truetype');
 }
 @font-face{
 	font-family:'Nanum Gothic';
 	font-style:normal;
 	font-weight:800;
-	src:url(./font/NanumGothic-ExtraBold.eot);
-	src:url(./font/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
-	   url(./font/NanumGothic-ExtraBold.woff2) format('woff2'),
-	   url(./font/NanumGothic-ExtraBold.woff) format('woff'),
-	   url(./font/NanumGothic-ExtraBold.ttf) format('truetype');
+	src:url(/css/font/NanumGothic-ExtraBold.eot);
+	src:url(/css/font/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+	   url(/css/font/NanumGothic-ExtraBold.woff2) format('woff2'),
+	   url(/css/font/NanumGothic-ExtraBold.woff) format('woff'),
+	   url(/css/font/NanumGothic-ExtraBold.ttf) format('truetype');
 }
 
 /* Reset */
@@ -91,7 +91,7 @@ input[type='checkbox']{margin-right:10px;width:18px;height:18px;text-indent:-999
 input[type='checkbox']:checked{margin-right:8px;width:20px;background:url(../images/icon_checkbox_on.png) no-repeat;border:0px none;}
 input[type='radio']{margin-right:10px;width:21px;height:21px;text-indent:-9999em;background:#fff;border:1px #ebebeb solid;border-radius:10px;-webkit-appearance:none;cursor:pointer;}
 input[type='radio']:checked{margin-right:10px;width:21px;background:url(../images/icon_radio_on.png) no-repeat;border:0px none;border-radius:0px;}
-.useDatepicker{width:200px;background:url(../images/icon_datepicker.png) no-repeat right center;}
+.useDatepicker{width:150px;background:url(/images/icon_datepicker.png) no-repeat right center;}
 #ui-datepicker-div{display:none;width:180px;background:#fff;border:1px #ccc solid;z-index:99 !important}
 .ui-datepicker{position:relative;padding:5px}
 .ui-datepicker table{width:100%;font-size:12px}
@@ -117,7 +117,8 @@ input[type='radio']:checked{margin-right:10px;width:21px;background:url(../image
 .btn_inline input[type='checkbox']{border-color:#111;}
 .btn_focus{color:#fff;background:#d7182a;border-color:#d7182a;}
 .btn_search,
-.btn_fileAttach{color:#fff;background:#111;border-color:#111;}
+.btn_fileAttach,
+.btn_black{color:#fff;background:#111;border-color:#111;}
 .btn_gray{background:#f9f9f9;}
 .btn_right{float:right;}
 
@@ -132,7 +133,7 @@ h4{display:block;margin-bottom:10px;font-size:20px;}
 .tableWrap{position:relative;}
 .tableWrap table{width:100%;}
 .tableWrap .tableHead tbody{display:none;}
-.tableWrap .tableBody.scrolled{height:224px;overflow-y:auto;border-bottom:1px #ebebeb solid;}
+.tableWrap .tableBody.scrolled{height:400px;overflow-y:auto;border-bottom:1px #ebebeb solid;}
 .tableWrap .tableBody thead{display:none;}
 .tableWrap{text-align:center;border-top:2px #111 solid;}
 .tableWrap.list table{}
@@ -607,9 +608,10 @@ ul.drawingList li{height:40px;line-height:40px;border-bottom:1px #ebebeb solid;t
 .zipcodeSection .tableWrap table td{height:40px;line-height:40px;text-align:center;border-bottom:1px #ebebeb solid;}
 .zipcodeSection .tableWrap .tableBody{height:123px;overflow-y:scroll;}
 
-#periodArea{position:relative;color:#959595;text-indent:-9999px;background:url(../images/bg_periodDisabled.gif) no-repeat 90px center;}
+#periodArea{position:relative;text-indent:-9999px;background:url(/images/bg_periodDisabled.gif) no-repeat 90px center;}
 #periodArea label{text-indent:0;}
 #periodArea.active{color:#000;text-indent:0;background:none;}
+
 
 /* Zoom */
 .zoomBox{display:block;position:relative;height:500px;overflow:hidden;}
@@ -625,3 +627,35 @@ ul.drawingList li{height:40px;line-height:40px;border-bottom:1px #ebebeb solid;t
 .zoomBox .btn_zoomPosition{display:block;position:absolute;width:50px;height:50px;text-indent:-9999em;background:url(../images/btn_zoomPosition.png) no-repeat center center;z-index:1;}
 .zoomBox.in .btn_zoomPosition{background:url(../images/btn_zoomPositionIn.png) no-repeat center center;}
 .zoomBox.out .btn_zoomPosition{background:url(../images/btn_zoomPositionOut.png) no-repeat center center;}
+
+/*
+.group_nav {
+    position: relative;
+    overflow: hidden;
+	padding: 11px 220px 11px 0;
+}
+.list_nav {
+    font-family: "Malgun Gothic", "맑은 고딕", -apple-system, BlinkMacSystemFont, helvetica, "Apple SD Gothic Neo", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    float: left;
+    letter-spacing: -0.3px;
+    color: rgb(0, 0, 0);
+}*/
+
+#header{position:absolute;top:0;left:50px;right:50px;height:170px;}
+#header ul.info{padding-top:10px;}
+#header ul.info:after{display:block;content:'';clear:both;}
+#header ul.info li{position:relative;float:left;padding:0 20px;width:10%;height:50px;line-height:50px;text-align:right;box-sizing:border-box;}
+#header ul.info li a.nav {font-size: 15px; font-weight: 800;}
+#container{position:absolute;top:170px;left:50px;right:50px;bottom:0;}
+#header ul.info {
+    position: relative;
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .2s cubic-bezier(.215,.61,.355,1);
+    transition: transform .2s cubic-bezier(.215,.61,.355,1);
+    transition: transform .2s cubic-bezier(.215,.61,.355,1),-webkit-transform .2s cubic-bezier(.215,.61,.355,1);
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+}
